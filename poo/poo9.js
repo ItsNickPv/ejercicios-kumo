@@ -7,6 +7,7 @@ class Libro {
     this.disponible = true;
   }
 
+  
   prestar() {
     if (this.disponible) {
       this.disponible = false;
