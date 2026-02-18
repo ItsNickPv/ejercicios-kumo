@@ -1,0 +1,11 @@
+.Img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  justify-items: auto;
+}
+
+p {
+  padding: 20px;
+  margin-top: 40px;
+}
