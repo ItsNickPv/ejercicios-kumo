@@ -1,0 +1,114 @@
+:root {
+  --purp-1: #e6d6f2;
+  --purp-2: #d4bce8;
+  --purp-3: #bfa1dd;
+  --purp-4: #a786d1;
+  --purp-5: #8e6cc4;
+  --purp-6: #7553b6;
+  --purp-7: #5f409f;
+}
+
+body.dark-mode {
+  --purp-1: #1a1028;
+  --purp-2: #24153a;
+  --purp-3: #341e57;
+  --purp-4: #4b2a80;
+  --purp-5: #6a3cc0;
+  --purp-6: #8e6cff;
+  --purp-7: #b9a4ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, var(--purp-1), var(--purp-5));
+  min-height: 100vh;
+  color: white;
+}
+
+.header {
+  background: linear-gradient(90deg, var(--purp-6), var(--purp-7));
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  background: var(--purp-5);
+  box-shadow: 0 0 15px var(--purp-4);
+}
+
+.sidebar {
+  position: fixed;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  padding: 25px 15px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 
+      0 0 25px rgba(95, 64, 159, 0.6),
+      inset 0 0 20px rgba(255,255,255,0.1);
+}
+
+.dot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--purp-4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.dot img {
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+.dot.active:hover {
+  background: var(--purp-5);
+  box-shadow: 0 0 20px var(--purp-3);
+}
+
+.dot.active {
+  background: linear-gradient(145deg, var(--purp-3), var(--purp-6));
+  box-shadow: 0 0 25px var(--purp-2);
+}

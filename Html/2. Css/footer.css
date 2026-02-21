@@ -1,0 +1,39 @@
+:root {
+  --bg-main: linear-gradient(135deg, #e6d6f2, #8e6cc4);
+  --text-color: #111;
+  --card-bg: rgba(255,255,255,0.7);
+  --card-shadow: rgba(0,0,0,0.15);
+}
+
+body.dark-mode {
+  --bg-main: linear-gradient(135deg, #1a1028, #4b2a80);
+  --text-color: #ffffff;
+  --card-bg: rgba(255,255,255,0.08);
+  --card-shadow: rgba(0,0,0,0.6);
+}
+
+.footer {
+  background-color: #ffffff00;
+  color: var(--text-color);
+  text-align: center;
+  padding: 20px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+footer {
+    background-color: #ffffff00;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
