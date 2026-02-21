@@ -1,0 +1,66 @@
+:root {
+  --bg-main: linear-gradient(135deg, #e6d6f2, #8e6cc4);
+  --text-color: #111;
+  --card-bg: rgba(255,255,255,0.7);
+  --card-shadow: rgba(0,0,0,0.15);
+}
+
+body.dark-mode {
+  --bg-main: linear-gradient(135deg, #1a1028, #4b2a80);
+  --text-color: #ffffff;
+  --card-bg: rgba(255,255,255,0.08);
+  --card-shadow: rgba(0,0,0,0.6);
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-color);
+  transition: 0.4s ease;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-main);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+p {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: var(--text-main);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.lenguajes {
+  color: var(--text-color);
+  font-size: 2.4rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.5s ease forwards;
+}
+
+.lenguajes2 {
+  color: var(--text-color);
+  font-size: 2.4rem;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(20px);
+  animation: fadeUp 0.5s ease forwards;
+  padding: 60px 140px 60px 80px;
+  
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
